@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const Footer = () => {
@@ -49,16 +49,16 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} Riyan. All rights reserved.
           </p>
           <div className="flex space-x-4 my-4 md:my-0">
-            <a href="https://www.facebook.com/" target="_blank" className="text-gray-400 hover:text-white">
+            <a href="https://www.facebook.com/rayanaly2003" target="_blank" className="text-gray-400 hover:text-white">
               <FaFacebook />
             </a>
-            <a href="#" target="_blank" className="text-gray-400 hover:text-white">
-              <FaTwitter />
+            <a href="https://www.instagram.com/riyan_shah/" target="_blank" className="text-gray-400 hover:text-white">
+              <FaInstagram />
             </a>
             <a href="https://www.linkedin.com/in/rayan-aly-web-developer/" target="_blank" className="text-gray-400 hover:text-white">
               <FaLinkedin />
             </a>
-            <a href="https://github.com/" target="_blank" className="text-gray-400 hover:text-white">
+            <a href="https://github.com/riyan8766?tab=repositories" target="_blank" className="text-gray-400 hover:text-white">
               <FaGithub />
             </a>
           </div>

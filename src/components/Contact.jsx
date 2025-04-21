@@ -26,7 +26,7 @@ const Contact = () => {
             className="flex-1"
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
+            transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}
           >
             <h3
               className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r 

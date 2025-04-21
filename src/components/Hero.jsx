@@ -13,21 +13,21 @@ const Hero = () => {
 
   return (
     <>
-      <div className='bg-black text-white text-center py-20'>
+      <div className='bg-black text-white text-center py-20 mt-16 sm:mt-20 md:mt-24'>
         <motion.img
           src={HeroImage}
-          alt=""
+          alt="cannot loaded"
           className='mx-auto mb-8 w-48 h-48 rounded-full object-cover'
           initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
+          whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
           whileHover={{ scale: 1.1 }}
         />
-     
+
         <motion.h1
           className='text-4xl font-bold'
-          initial={{ y: -50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
+          initial={{ y: 50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
         >
           I'm{" "}
@@ -40,18 +40,21 @@ const Hero = () => {
         <motion.p
           className='mt-4 text-lg text-gray-300'
           initial={{ y: 50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
+          whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
         >
           I specialize in building modern and responsive web applications.
         </motion.p>
-  
+
         <div className='mt-8 space-x-4'>
           <motion.button
             className='bg-gradient-to-r from-green-400 to-blue-500 text-white transform px-4 py-2 rounded-full'
             onClick={() => navigate('/contact')}
+            whileInView={{ scale: 1.1 }}
+            viewport={{ once: true, amount: 0.5 }}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
+            transition={{ duration: 0.3 }}
           >
             Contact With Me
           </motion.button>
@@ -60,8 +63,11 @@ const Hero = () => {
             href={Resume}
             download="Rayan.pdf"
             className='bg-gradient-to-r from-pink-500 to-yellow-500 text-white transform px-4 py-2 rounded-full cursor-pointer'
+            whileInView={{ scale: 1.1 }}
+            viewport={{ once: true, amount: 0.5 }}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
+            transition={{ duration: 0.3 }}
           >
             Resume
           </motion.a>
